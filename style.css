@@ -1,0 +1,175 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://i.makeagif.com/media/3-18-2020/PYsJ_G.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: fonte;
+    
+
+}
+
+@font-face{
+    font-family: fonte;
+    src: url(fonte/School.otf);
+    
+}
+.imagem img{
+    width: 10em;
+    height: 10em;
+    border-radius: 1em;
+
+}
+
+.imagem img:hover{
+    width: 11em;
+    height: 11em;
+    border-radius: 1em;
+    transition: all 0.4s ease;
+
+}
+
+h1{
+    font-size:4em ;
+    color: #56ACFF;
+    text-shadow: 2px 2px 2px #8C234A;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+p{
+    font-size: 2.3em;
+    color: #F28DCF;
+    padding:30px;
+    margin: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    font-size: 2.4em;
+    text-shadow: 2px 2px 2px #173BA6;
+    
+}
+h2{
+    letter-spacing: 10px;
+    font-size: 3em;
+    color: aliceblue;
+    background-color: #8C234A;
+    box-shadow: 2px 2px 2px #F28DCF;
+    border-radius: 2% 2em;
+    margin: 1em auto;
+    padding: 30px;
+}
+
+button{
+
+    background-color: #59023B;
+    padding: 1em;
+    border-radius: 2% 2em;
+    box-shadow: 2px 2px 2px #F28DCF;
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+    transition: all 0.2s ease-in-out; 
+
+    
+}
+
+button:hover{
+    filter: opacity(50%);
+    box-shadow: 2px 2px 2px #173BA6;
+    color: rgb(255, 255, 255);
+}
+
+input{
+    box-shadow: 2px 4px 2px black;
+    margin: 1em;
+    font-size: 1.2em;
+    align-items: center;
+    border-radius: 2em;
+    padding: 1em;
+    
+    
+}
+
+table{
+    margin: auto;
+    font-size: 3.4em;
+    box-shadow: 6px 6px 6px #173BA6;
+    color: #F28DCF;
+    padding: 1em;
+    border: none;
+    
+}
+
+
+table:hover{
+    transition: all 0.2s ease-in-out; 
+    box-shadow: 6px 6px 6px #F28DCF;
+    color: #5677db;
+    
+    
+}
+
+th{
+    border: none;
+    background-color: #59023B;
+    padding: 10px;
+    letter-spacing: 7px;
+}
+
+td{
+    border: none;
+    font-size:1.2em ;
+    color: #56ACFF;
+    text-shadow: 2px 2px 2px #8C234A;
+
+}
+
+#tabuada{
+    text-align: center;
+    color: #F28DCF;
+   
+}
+
+footer{
+    font-size: 1.5em;
+    margin: 2em;
+    background-color: #59023B;
+    color: aliceblue;
+    padding: 1.2em;
+    border-radius: 2% 2em;
+    box-shadow: 4px 4px 5px #173BA6;
+}
+
+@media all and (max-width: 820px){
+
+    h1{
+        font-size:2em ;
+        padding: 1em;
+    
+    }
+    
+    p{
+        font-size: 1.5em;
+
+    }
+
+    table{
+        margin: auto;
+        font-size: 2em;
+        padding: 2em;
+        margin: auto;
+        
+        
+    }
+}

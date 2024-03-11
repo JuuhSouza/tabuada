@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn.awsli.com.br/2500x2500/488/488819/produto/217459586/tabuada_div-capa-u1vzndzwuj.png">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+
+    <h1> Oque é uma tabuada?</h1>
+
+    <p> A tabuada é uma representação em forma de tabela utilizada para fazer cálculos das operações matemáticas: adição, subtração, multiplicação e divisão. Ela contempla os dez algarismos: 1, 2, 3, 4, 5, 6, 7, 8, 9 e 10, que são apresentados por colunas e linhas definidas de acordo com o tipo de cálculo que será feito.</p>
+
+    <div class="imagem" data-aos="flip-down">
+            
+        <img src="https://i.pinimg.com/originals/bb/d7/cd/bbd7cd62c9f1f6778e91b11a71874ab6.gif" alt="">
+
+        <img src="https://i.pinimg.com/originals/a9/0c/cc/a90cccb610df7ffdae82f8e8d906b6c3.gif" alt="">
+
+        <img src="https://i.pinimg.com/originals/08/ec/a0/08eca0a9de1de66d2f097205db26113f.gif" alt="">
+
+        <img src="https://classroomclipart.com/images/gallery/Animations/Education_School/animated-clipart-student-sliding-down-stack-books-05c.gif" alt="">
+
+    </div>
+
+    <div id="container"  data-aos="flip-down">
+        <h2>Gerador de Tabuada</h2>
+
+        <input type="number" id="numInput" placeholder="Digite um número">
+        <button onclick="geradorTabuada()"> Gerar Tabuadas</button>
+        <div id="tabuada"></div>
+
+
+        
+    </div>
+
+    <script>
+        function geradorTabuada(){
+            var numInput = document.getElementById("numInput").value;
+            var tabuadaDiv = document.getElementById("tabuada");
+            tabuadaDiv.innerHTML = "";
+
+            if (!numInput || isNaN(numInput)){
+                tabuadaDiv.innerHTML = "<p> Por favor, insira um número válido.</p>";
+                return;
+            }
+
+            var tableHTML = "<h3> Tabuada do " + numInput + "</h3> <table border='1'> <tr> <th> Número </th> <th> Resultado </th></tr>"; 
+
+                for (var i = 1; i <= 10; i++) {
+                    tableHTML += "<tr><td>" + numInput + " x " + i + "</td><td>" + (numInput * i) + "</td></tr>";
+                }
+
+                tableHTML += "</table>";
+                tabuadaDiv.innerHTML = tableHTML;
+
+        }
+    
+    </script>
+
+    <footer data-aos="flip-down"> Desenvolvido por Júlia Souza | 2024</footer>
+
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
